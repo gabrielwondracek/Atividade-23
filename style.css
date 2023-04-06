@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 0px;
+}
+
+
+
+.boneco {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}

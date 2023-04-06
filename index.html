@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mapa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onmousemove="MoveBoneco(event)";>
+
+    <map name="meu_mapa">
+        <area title="Visite o Rio Grande Do Sul"     onmouseover="sul();"           onmouseleave="MostraOriginal();" shape="circle" coords="260,440,20"  href="https://pt.wikipedia.org/wiki/Rio_grande_do_sul"      target="_blank">
+        <area title="Visite Santa Catarina"          onmouseover="sul();"           onmouseleave="MostraOriginal();" shape="circle" coords="293,412,20"  href="https://pt.wikipedia.org/wiki/Santa_Catarina"         target="_blank">
+        <area title="Visite o Paraná"                onmouseover="sul();"           onmouseleave="MostraOriginal();" shape="circle" coords="277,377,20"  href="https://pt.wikipedia.org/wiki/Paran%C3%A1"            target="_blank">
+        <area title="Visite o São Paulo"             onmouseover="sudeste();"       onmouseleave="MostraOriginal();" shape="circle" coords="311,351,20"  href="https://pt.wikipedia.org/wiki/São_Paulo"              target="_blank">
+        <area title="Visite Minas Gerais"            onmouseover="sudeste();"       onmouseleave="MostraOriginal();" shape="circle" coords="362,306,20"  href="https://pt.wikipedia.org/wiki/Minas_Gerais"           target="_blank">
+        <area title="Visite o Rio De Janeiro"        onmouseover="sudeste();"       onmouseleave="MostraOriginal();" shape="circle" coords="384,352,5"   href="https://pt.wikipedia.org/wiki/Rio_De_Janeiro"         target="_blank">
+        <area title="Visite o Espírito Santo"        onmouseover="sudeste();"       onmouseleave="MostraOriginal();" shape="circle" coords="408,321,5"   href="https://pt.wikipedia.org/wiki/Espírito_Santo"         target="_blank">
+        <area title="Visite o Mato Grosso Do Sul"    onmouseover="centroOeste();"   onmouseleave="MostraOriginal();" shape="circle" coords="239,322,20"  href="https://pt.wikipedia.org/wiki/Mato_Grosso_Do_Sul"     target="_blank">
+        <area title="Visite Goiás"                   onmouseover="centroOeste();"   onmouseleave="MostraOriginal();" shape="circle" coords="304,271,15"  href="https://pt.wikipedia.org/wiki/Goiás"                  target="_blank">
+        <area title="Distrito Federal"               onmouseover="centroOeste();"   onmouseleave="MostraOriginal();" shape="circle" coords="325,266,3"   href="https://pt.wikipedia.org/wiki/Distrito_Federal"       target="_blank">
+        <area title="Visite o Mato Grosso"           onmouseover="centroOeste();"   onmouseleave="MostraOriginal();" shape="circle" coords="229,233,20"  href="https://pt.wikipedia.org/wiki/Mato_Grosso"            target="_blank">
+        <area title="Visite Tocantins"               onmouseover="norte();"         onmouseleave="MostraOriginal();" shape="circle" coords="319,197,20"  href="https://pt.wikipedia.org/wiki/Tocantins"              target="_blank">
+        <area title="Visite Rondônia"                onmouseover="norte();"         onmouseleave="MostraOriginal();" shape="circle" coords="140,207,20"  href="https://pt.wikipedia.org/wiki/Rondônia"               target="_blank">
+        <area title="Visite o Acre"                  onmouseover="norte();"         onmouseleave="MostraOriginal();" shape="circle" coords="38,192,10"   href="https://pt.wikipedia.org/wiki/Acre"                   target="_blank">
+        <area title="Visite o Amazonas"              onmouseover="norte();"         onmouseleave="MostraOriginal();" shape="circle" coords="121,121,30"  href="https://pt.wikipedia.org/wiki/Amazonas"               target="_blank">
+        <area title="Visite Roraima"                 onmouseover="norte();"         onmouseleave="MostraOriginal();" shape="circle" coords="160,42,20"   href="https://pt.wikipedia.org/wiki/Roraima"                target="_blank">
+        <area title="Visite Pará"                    onmouseover="norte();"         onmouseleave="MostraOriginal();" shape="circle" coords="264,128,35"  href="https://pt.wikipedia.org/wiki/Pará"                   target="_blank">
+        <area title="Visite o Amapá"                 onmouseover="norte();"         onmouseleave="MostraOriginal();" shape="circle" coords="277,52,10"   href="https://pt.wikipedia.org/wiki/Amapá"                  target="_blank">
+        <area title="Visite a Bahia"                 onmouseover="nordeste();"      onmouseleave="MostraOriginal();" shape="circle" coords="397,227,20"  href="https://pt.wikipedia.org/wiki/Bahia"                  target="_blank">
+        <area title="Visite o Maranhão"              onmouseover="nordeste();"      onmouseleave="MostraOriginal();" shape="circle" coords="361,128,20"  href="https://pt.wikipedia.org/wiki/Maranhão"               target="_blank">
+        <area title="Visite o Piauí"                 onmouseover="nordeste();"      onmouseleave="MostraOriginal();" shape="circle" coords="389,168,10"  href="https://pt.wikipedia.org/wiki/Piauí"                  target="_blank">
+        <area title="Visite o Ceará"                 onmouseover="nordeste();"      onmouseleave="MostraOriginal();" shape="circle" coords="433,132,10"  href="https://pt.wikipedia.org/wiki/Ceará"                  target="_blank">
+        <area title="Visite o Rio Grande Do Norte"   onmouseover="nordeste();"      onmouseleave="MostraOriginal();" shape="circle" coords="470,146,5"   href="https://pt.wikipedia.org/wiki/Rio_Grande_Do_Norte"    target="_blank">
+        <area title="Visite a Paraíba"               onmouseover="nordeste();"      onmouseleave="MostraOriginal();" shape="circle" coords="476,165,5"   href="https://pt.wikipedia.org/wiki/Paraiba"                target="_blank">
+        <area title="Visite Pernambuco"              onmouseover="nordeste();"      onmouseleave="MostraOriginal();" shape="circle" coords="450,180,5"   href="https://pt.wikipedia.org/wiki/Pernambuco"             target="_blank">
+        <area title="Visite o Alagoas"               onmouseover="nordeste();"      onmouseleave="MostraOriginal();" shape="circle" coords="473,198,5"   href="https://pt.wikipedia.org/wiki/Alagoas"                target="_blank">
+        <area title="Visite o Sergipe"               onmouseover="nordeste();"      onmouseleave="MostraOriginal();" shape="circle" coords="460,214,5"   href="https://pt.wikipedia.org/wiki/Sergipe"                target="_blank">
+    </map>  
+
+        <img src="mapa_brasil.jpg" id="BRASIL" usemap="#meu_mapa">
+
+        <img src="boneco.gif" width="80px" class="boneco" id="boneco">
+</body>
+
+    <script src="script.js"></script>
+</html>
